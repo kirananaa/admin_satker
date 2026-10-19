@@ -1,0 +1,16 @@
+:root { font-family: system-ui, sans-serif; color: #1f2937; background: #f9fafb; }
+body { margin: 0; }
+.shell { min-height: 100vh; display: flex; flex-direction: column; }
+.topbar { display: flex; justify-content: space-between; align-items: center; padding: 12px 24px; background: #fff; border-bottom: 1px solid #e5e7eb; }
+.topbar-right { display: flex; gap: 16px; align-items: center; }
+.content { padding: 24px; max-width: 960px; width: 100%; box-sizing: border-box; margin: 0 auto; }
+.login { max-width: 360px; margin: 10vh auto; padding: 0 16px; }
+.field { display: flex; flex-direction: column; gap: 4px; margin-bottom: 16px; }
+.field input, select { padding: 8px; border: 1px solid #d1d5db; border-radius: 6px; font: inherit; }
+.field input[aria-invalid='true'] { border-color: #b91c1c; }
+.field-error, .form-error { color: #b91c1c; margin: 0; font-size: 0.875rem; }
+button { padding: 8px 16px; border: 0; border-radius: 6px; background: #1d4ed8; color: #fff; font: inherit; cursor: pointer; }
+button:disabled { opacity: 0.6; cursor: default; }
+button.link { background: none; color: #1d4ed8; padding: 0; }
+.picker { list-style: none; padding: 0; display: grid; gap: 8px; }
+.picker button { width: 100%; text-align: left; }
